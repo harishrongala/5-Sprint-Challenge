@@ -11,7 +11,7 @@ function timebox(name, duration) { // 30min
   // console.log(name + ' has started.');
 
   const timer = setInterval(function() {
-    if (durationSec !== 0) {
+    if (durationSec !== 1) {
       // console.log(durationSec);
       durationSec--;
     } else {
@@ -21,4 +21,4 @@ function timebox(name, duration) { // 30min
   }, 1000)
 }
 
-timebox('Test', 0.2);
+timebox('Test', .1);
