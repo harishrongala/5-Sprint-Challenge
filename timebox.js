@@ -11,14 +11,18 @@ function timebox(name, duration) { // 30min
   // console.log(name + ' has started.');
 
   const timer = setInterval(function() {
-    if (durationSec !== 0) {
+    if (durationSec !== 1) {
       // console.log(durationSec);
       durationSec--;
     } else {
-      console.log("Time is up!");
+      console.log(`${name} - Time is up!`);
       clearInterval(timer);
     }
   }, 1000)
 }
 
 timebox('Test', 0.2);
+timebox('Test 2', 0.1);
+timebox('Meeting', 1);
+timebox('Um', 10000000);
+timebox('idk', 5.5);
