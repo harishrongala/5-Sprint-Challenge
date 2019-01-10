@@ -1,9 +1,12 @@
-function timebox(name, duration) { // 30min
+function timebox() { // 30min
   // halftime, 1 min, 10sec, done
   // 1. Convert to seconds => 1800s
   // 2. Find seconds for each point
   // 3. Set timeout then console.log
-  var durationSec = duration * 60;
+  var meetingName = prompt("Please enter the meeting name: ")
+  var duration = prompt("How long is the meeting (Enter in minutes): ")
+  var durationSec = Number(duration) * 60
+
   var halftime = durationSec / 2;
   var oneMin = 60;
   var tenSec = 10;
@@ -15,14 +18,14 @@ function timebox(name, duration) { // 30min
       // console.log(durationSec);
       durationSec--;
     } else {
-      console.log(`${name} - Time is up!`);
+      alert(`${meetingName} - Time is up!`);
       clearInterval(timer);
     }
   }, 1000)
 }
 
-timebox('Test', 0.2);
-timebox('Test 2', 0.1);
-timebox('Meeting', 1);
-timebox('Um', 10000000);
-timebox('idk', 5.5);
+// timebox('Test', 0.2);
+// timebox('Test 2', 0.1);
+// timebox('Meeting', 1);
+// timebox('Um', 10000000);
+// timebox('idk', 5.5);

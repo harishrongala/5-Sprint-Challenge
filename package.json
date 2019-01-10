@@ -1,0 +1,22 @@
+{
+  "name": "5-sprint-challenge",
+  "version": "1.0.0",
+  "description": "A short 3h class challenge to complete Sprints 1-5",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scrum26challenge/5-Sprint-Challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scrum26challenge/5-Sprint-Challenge/issues"
+  },
+  "homepage": "https://github.com/scrum26challenge/5-Sprint-Challenge#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
